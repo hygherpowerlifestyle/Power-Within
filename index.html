@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Flipbook</title>
+<style>
+  body {
+    margin: 0;
+    background: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  #flipbook {
+    width: 800px;
+    height: 600px;
+  }
+
+  #flipbook .page img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+</style>
+
+<!-- Turn.js library -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/turn.js/4.1.0/turn.min.js"></script>
+</head>
+<body>
+
+<div id="flipbook">
+  <!-- Pages will go here -->
+  <div class="page"><img src="page-001.jpg"></div>
+  <div class="page"><img src="page-002.jpg"></div>
+  <div class="page"><img src="page-003.jpg"></div>
+  <div class="page"><img src="page-004.jpg"></div>
+  <div class="page"><img src="page-005.jpg"></div>
+  <div class="page"><img src="page-006.jpg"></div>
+  <div class="page"><img src="page-007.jpg"></div>
+  <div class="page"><img src="page-008.jpg"></div>
+  <div class="page"><img src="page-009.jpg"></div>
+  <div class="page"><img src="page-010.jpg"></div>
+  <div class="page"><img src="page-011.jpg"></div>
+  <div class="page"><img src="page-012.jpg"></div>
+  <div class="page"><img src="page-013.jpg"></div>
+  <div class="page"><img src="page-014.jpg"></div>
+  <div class="page"><img src="page-015.jpg"></div>
+  <div class="page"><img src="page-016.jpg"></div>
+  <div class="page"><img src="page-017.jpg"></div>
+  <div class="page"><img src="page-018.jpg"></div>
+  <div class="page"><img src="page-019.jpg"></div>
+  <div class="page"><img src="page-020.jpg"></div>
+  <div class="page"><img src="page-021.jpg"></div>
+  <div class="page"><img src="page-022.jpg"></div>
+  <div class="page"><img src="page-023.jpg"></div>
+  <div class="page"><img src="page-024.jpg"></div>
+  <div class="page"><img src="page-025.jpg"></div>
+  <div class="page"><img src="page-026.jpg"></div>
+  <div class="page"><img src="page-027.jpg"></div>
+  <div class="page"><img src="page-028.jpg"></div>
+  <div class="page"><img src="page-029.jpg"></div>
+  <div class="page"><img src="page-030.jpg"></div>
+  <div class="page"><img src="page-031.jpg"></div>
+  <div class="page"><img src="page-032.jpg"></div>
+  <div class="page"><img src="page-033.jpg"></div>
+  <div class="page"><img src="page-034.jpg"></div>
+  <div class="page"><img src="page-035.jpg"></div>
+  <div class="page"><img src="page-036.jpg"></div>
+  <div class="page"><img src="page-037.jpg"></div>
+  <div class="page"><img src="page-038.jpg"></div>
+  <div class="page"><img src="page-039.jpg"></div>
+  <div class="page"><img src="page-040.jpg"></div>
+  <div class="page"><img src="page-041.jpg"></div>
+  <div class="page"><img src="page-042.jpg"></div>
+  <div class="page"><img src="page-043.jpg"></div>
+  <div class="page"><img src="page-044.jpg"></div>
+  <div class="page"><img src="page-045.jpg"></div>
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    $("#flipbook").turn({
+      width: 800,
+      height: 600,
+      autoCenter: true
+    });
+  });
+</script>
+
+<!-- jQuery (required for Turn.js) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+</body>
+</html>
